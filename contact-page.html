@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation__logo">
+        <p>Ginyard Gym</p>
+      </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="./index.html">Home</a></li>
+          <li class="navigation__item"><a href="#">About us</a></li>
+          <li class="navigation__item"><a href="#">Services</a></li>
+          <li class="navigation__item"><a href="#">Our Team</a></li>
+          <li class="navigation__item"><a href="./contact-page.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="navigation-social">
+        <li>
+          <a href="#"
+            ><img
+              src="./assests/imgs/facebook.svg"
+              alt="Facebook"
+              class="navigation-social--icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assests/imgs/instagram.svg"
+              alt="Instagram"
+              class="navigation-social--icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assests/imgs/twitter.svg"
+              alt="Twitter"
+              class="navigation-social--icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assests/imgs/youtube.svg"
+              alt="Youtube"
+              class="navigation-social--icon"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="contact-me__first-section">
+      <h1 class="contact-me__first-section--header">Contact us</h1>
+    </section>
+
+    <section class="contact-me__second-section">
+      <div class="second__section--contact-me">
+        <div>
+          <img
+            src="./assests/imgs/location-pin-svgrepo-com.svg"
+            alt="Location"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
+        </div>
+
+        <div>
+          <img
+            src="./assests/imgs/phone-svgrepo-com.svg"
+            alt="Phone"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">0335 123 456</p>
+        </div>
+
+        <div>
+          <img
+            src="./assests/imgs/mail-svgrepo-com.svg"
+            alt="Phone"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">support.ginyard@gmail.com</p>
+        </div>
+      </div>
+
+      <div>
+        <form
+          id="myForm"
+          class="gform"
+          method="POST"
+          data-email="andreicatalin.postolache97@gmail.com"
+          action="https://script.google.com/macros/s/AKfycby0ZN849oQ5X0BEotpxhCiitBBUgND4HcRQNmiCcfN4Na4-Rfs1G3WrU2j6k3PU8a5A/exec"
+        >
+          <div class="input">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <div class="label">
+              <label for="name">Name</label>
+            </div>
+          </div>
+          <div class="input">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder=" "
+            />
+            <div class="label">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="input">
+            <textarea
+              id="message"
+              name="message"
+              placeholder=" "
+              required
+            ></textarea>
+            <div class="label">
+              <label for="message" class="label-textarea">Message</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <div id="map"></div>
+
+    <section class="sixth__section">
+      <div class="sixth__section--contact-me">
+        <div>
+          <img
+            src="./assests/imgs/location-pin-svgrepo-com.svg"
+            alt="Location"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
+        </div>
+
+        <div>
+          <img
+            src="./assests/imgs/phone-svgrepo-com.svg"
+            alt="Phone"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">0335 123 456</p>
+        </div>
+
+        <div>
+          <img
+            src="./assests/imgs/mail-svgrepo-com.svg"
+            alt="Phone"
+            class="contact-me__icons"
+          />
+          <p class="contact-me__description">support.ginyard@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <p class="footer-logo">Ginyard Gym</p>
+        <div class="footer-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore dolore magna aliqua endisse
+          ultrices gravida lorem.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-title">Useful links</p>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">Our Classes</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-title">Support</p>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Subscribe</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-title">Tips & Guides</p>
+        <ul>
+          <li>
+            <a href="#"
+              >Physical fitness may help prevent depression, anxiety</a
+            >
+          </li>
+          <li><a href="#">The best exercise to lose belly fat</a></li>
+          <li>
+            <a href="#">27 Best Dumbbell Exercises for Building Muscle</a>
+          </li>
+          <li>
+            <a href="#">10 Best Chest Workout Exercises for Building Muscle</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
