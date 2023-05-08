@@ -159,7 +159,7 @@ header {
   padding: 7rem 0rem 2rem 3.5rem;
 }
 
-.btn{
+.btn {
   padding: 1rem 3rem;
   text-align: center;
   background: transparent;
@@ -187,7 +187,6 @@ header {
   background: linear-gradient(45deg, #fff 50%, transparent 50%);
   z-index: -1;
 }
-
 
 .btn > span,
 .btn:after {
@@ -664,7 +663,18 @@ footer {
   position: relative;
 }
 
-.contact-me__first-section--header {
+.about-me__first-section {
+  background-image: url(./assests/imgs/pexels-leon-ardho-1552252.jpg);
+  height: 35rem;
+  width: auto;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact-me__first-section--header,
+.about-me__first-section--header {
   color: #fff;
   font-size: 4rem;
   position: absolute;
@@ -799,4 +809,174 @@ textarea:not(:placeholder-shown) + .label label {
 
 #map {
   height: 30rem;
+}
+
+.about-me__third-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #151515;
+  gap: 5rem;
+}
+
+.about-me__third-section-image {
+  width: 70rem;
+}
+
+.about-me__third-section-description {
+  padding: 6rem 1rem;
+}
+
+.about-me__third-section-description:last-child {
+  color: #fff;
+  width: 30%;
+}
+
+.about-me__fourth-section {
+  background-color: #000000;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+/* SLIDER */
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  width: 65%;
+  position: relative;
+}
+
+
+
+.testimonial__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  font-size: 1.7rem;
+  margin-bottom: 3.5rem;
+  color: #666;
+}
+
+.testimonial__author {
+  margin-left: 3rem;
+  font-style: normal;
+
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  
+}
+
+.testimonial__photo {
+  grid-row: 1 / span 2;
+  width: 10rem;
+aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  align-self: end;
+  margin: 0;
+  color: #fff;
+}
+
+.testimonial__location {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.section__title--testimonials {
+  margin-bottom: 4rem;
 }
