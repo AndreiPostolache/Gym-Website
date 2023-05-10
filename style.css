@@ -898,7 +898,7 @@ textarea:not(:placeholder-shown) + .label label {
 .dots {
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 54%;
   transform: translateX(-50%);
   display: flex;
 }
