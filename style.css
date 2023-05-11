@@ -978,19 +978,19 @@ textarea:not(:placeholder-shown) + .label label {
   margin-bottom: 4rem;
 }
 
-.gallery_second-section{
+.gallery_second-section {
   background-color: #000000;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: .3rem;
+  grid-gap: 0.3rem;
 }
 
-.gallery__img{
+.gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -998,17 +998,13 @@ textarea:not(:placeholder-shown) + .label label {
   transition: transform 0.8s;
 }
 
-
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   overflow: hidden;
- 
- 
 }
-
 
 .gallery__item--2 {
   grid-column-start: 3;
@@ -1018,7 +1014,6 @@ textarea:not(:placeholder-shown) + .label label {
   overflow: hidden;
 }
 
-
 .gallery__item--3 {
   grid-column-start: 5;
   grid-column-end: 9;
@@ -1026,7 +1021,6 @@ textarea:not(:placeholder-shown) + .label label {
   grid-row-end: 6;
   overflow: hidden;
 }
-
 
 .gallery__item--4 {
   grid-column-start: 1;
@@ -1036,7 +1030,6 @@ textarea:not(:placeholder-shown) + .label label {
   overflow: hidden;
 }
 
-
 .gallery__item--5 {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -1045,16 +1038,177 @@ textarea:not(:placeholder-shown) + .label label {
   overflow: hidden;
 }
 
-
 .gallery__item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
-    overflow: hidden;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  overflow: hidden;
 }
 
-.gallery__img:hover{
+.gallery__img:hover {
   transform: scale(1.5);
+}
+
+.services__section-table {
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 6rem 1rem;
+}
+
+/* Zebra striping */
+tr {
+  background: #000;
+  color: #fff;
+}
+
+th {
+  background: #f40101;
+  color: #eee;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Label the data */
+    content: attr(data-column);
+
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.questions {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* =============== Questions =============== */
+
+
+#questions-wrapper {
+  padding: 6rem 1rem;
+  width: 50rem;
+}
+.question {
+  background: #151515;
+  border-radius: 10px;
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: #eee;
+}
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #eee;
+  transition: 0.5s;
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid #fff;
+  color: #eee;
+}
+.question-text p {
+  margin-bottom: 0;
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
 }
 

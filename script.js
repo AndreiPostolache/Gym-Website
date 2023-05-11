@@ -138,3 +138,5 @@ const slider = function () {
 
 getLocation();
 slider();
+
+

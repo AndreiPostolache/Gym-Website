@@ -28,10 +28,14 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="./index.html">Home</a></li>
-          <li class="navigation__item"><a href="./about-us.html">About us</a></li>
+          <li class="navigation__item">
+            <a href="./about-us.html">About us</a>
+          </li>
           <li class="navigation__item"><a href="#">Services</a></li>
           <li class="navigation__item"><a href="#">Our Team</a></li>
-          <li class="navigation__item"><a href="./contact-page.html">Contact</a></li>
+          <li class="navigation__item">
+            <a href="./contact-page.html">Contact</a>
+          </li>
           <li class="navigation__item"><a href="./gallery.html">Gallery</a></li>
         </ul>
       </nav>
@@ -72,114 +76,122 @@
       </ul>
     </header>
 
-    <section class="contact-me__first-section">
-      <h1 class="contact-me__first-section--header">Contact us</h1>
-    </section>
+    <main>
+      <section class="contact-me__first-section">
+        <h1 class="contact-me__first-section--header">Contact us</h1>
+      </section>
 
-    <section class="contact-me__second-section">
-      <div class="second__section--contact-me">
-        <div>
-          <img
-            src="./assests/imgs/location-pin-svgrepo-com.svg"
-            alt="Location"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
-        </div>
-
-        <div>
-          <img
-            src="./assests/imgs/phone-svgrepo-com.svg"
-            alt="Phone"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">0335 123 456</p>
-        </div>
-
-        <div>
-          <img
-            src="./assests/imgs/mail-svgrepo-com.svg"
-            alt="Phone"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">support.ginyard@gmail.com</p>
-        </div>
-      </div>
-
-      <div>
-        <form
-          id="myForm"
-          class="gform"
-          method="POST"
-          data-email="andreicatalin.postolache97@gmail.com"
-          action="https://script.google.com/macros/s/AKfycby0ZN849oQ5X0BEotpxhCiitBBUgND4HcRQNmiCcfN4Na4-Rfs1G3WrU2j6k3PU8a5A/exec"
-        >
-          <div class="input">
-            <input type="text" id="name" name="name" required placeholder=" " />
-            <div class="label">
-              <label for="name">Name</label>
-            </div>
-          </div>
-          <div class="input">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder=" "
+      <section class="contact-me__second-section">
+        <div class="second__section--contact-me">
+          <div>
+            <img
+              src="./assests/imgs/location-pin-svgrepo-com.svg"
+              alt="Location"
+              class="contact-me__icons"
             />
-            <div class="label">
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="input">
-            <textarea
-              id="message"
-              name="message"
-              placeholder=" "
-              required
-            ></textarea>
-            <div class="label">
-              <label for="message" class="label-textarea">Message</label>
-            </div>
+            <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
           </div>
 
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-    <div id="map"></div>
+          <div>
+            <img
+              src="./assests/imgs/phone-svgrepo-com.svg"
+              alt="Phone"
+              class="contact-me__icons"
+            />
+            <p class="contact-me__description">0335 123 456</p>
+          </div>
 
-    <section class="sixth__section">
-      <div class="sixth__section--contact-me">
-        <div>
-          <img
-            src="./assests/imgs/location-pin-svgrepo-com.svg"
-            alt="Location"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
+          <div>
+            <img
+              src="./assests/imgs/mail-svgrepo-com.svg"
+              alt="Phone"
+              class="contact-me__icons"
+            />
+            <p class="contact-me__description">support.ginyard@gmail.com</p>
+          </div>
         </div>
 
         <div>
-          <img
-            src="./assests/imgs/phone-svgrepo-com.svg"
-            alt="Phone"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">0335 123 456</p>
-        </div>
+          <form
+            id="myForm"
+            class="gform"
+            method="POST"
+            data-email="andreicatalin.postolache97@gmail.com"
+            action="https://script.google.com/macros/s/AKfycby0ZN849oQ5X0BEotpxhCiitBBUgND4HcRQNmiCcfN4Na4-Rfs1G3WrU2j6k3PU8a5A/exec"
+          >
+            <div class="input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder=" "
+              />
+              <div class="label">
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder=" "
+              />
+              <div class="label">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="input">
+              <textarea
+                id="message"
+                name="message"
+                placeholder=" "
+                required
+              ></textarea>
+              <div class="label">
+                <label for="message" class="label-textarea">Message</label>
+              </div>
+            </div>
 
-        <div>
-          <img
-            src="./assests/imgs/mail-svgrepo-com.svg"
-            alt="Phone"
-            class="contact-me__icons"
-          />
-          <p class="contact-me__description">support.ginyard@gmail.com</p>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
+      <div id="map"></div>
+
+      <section class="sixth__section">
+        <div class="sixth__section--contact-me">
+          <div>
+            <img
+              src="./assests/imgs/location-pin-svgrepo-com.svg"
+              alt="Location"
+              class="contact-me__icons"
+            />
+            <p class="contact-me__description">Str. Libertatii nr.6, Iasi</p>
+          </div>
+
+          <div>
+            <img
+              src="./assests/imgs/phone-svgrepo-com.svg"
+              alt="Phone"
+              class="contact-me__icons"
+            />
+            <p class="contact-me__description">0335 123 456</p>
+          </div>
+
+          <div>
+            <img
+              src="./assests/imgs/mail-svgrepo-com.svg"
+              alt="Phone"
+              class="contact-me__icons"
+            />
+            <p class="contact-me__description">support.ginyard@gmail.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div>
@@ -194,10 +206,10 @@
       <div class="footer-links">
         <p class="footer-title">Useful links</p>
         <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Blog</a></li>
-            <li><a href="#">Our Classes</a></li>
-            <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Our Classes</a></li>
+          <li><a href="#">Contact us</a></li>
         </ul>
       </div>
 
