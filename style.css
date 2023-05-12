@@ -1151,7 +1151,6 @@ and also iPads specifically.
 
 /* =============== Questions =============== */
 
-
 #questions-wrapper {
   padding: 6rem 1rem;
   width: 50rem;
@@ -1212,3 +1211,137 @@ and also iPads specifically.
   display: none;
 }
 
+.our-team__first-section {
+  background-image: url(./assests/imgs/pexels-mikhail-nilov-6740301.jpg);
+  height: 35rem;
+  width: auto;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.our-team__second-section {
+  background-color: #151515;
+}
+
+.our-team__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.our-team__card {
+  width: 300px;
+  height: 361px;
+  background: #232323;
+  padding: 3rem 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.our-team__card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*Image*/
+.our-team__card-avatar {
+  --size: 100px;
+ 
+  background-size: cover;
+ 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+
+.card-avatar-1{
+  background-image: url(./assests/imgs/pexels-davner-ribeiro-4574154.jpg);
+
+}
+
+
+.card-avatar-2{
+  background-image: url(./assests/imgs/pexels-mikhail-nilov-6740056.jpg);
+
+}
+
+
+.card-avatar-3{
+  background-image: url(./assests/imgs/pexels-kampus-production-6111626.jpg);
+
+}
+
+/*Card footer*/
+.our-team__card-social {
+  transform: translateY(200%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  gap: 2rem;
+  padding-left: 0;
+}
+
+.card-social__item {
+  list-style: none;
+}
+
+.card-social__item svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+  fill: #fff;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+/*Text*/
+.our-team__card-title {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.our-team__card-subtitle {
+  color: #859ba8;
+  font-size: 0.8em;
+}
+
+/*Hover*/
+.our-team__card:hover {
+  box-shadow: 0 8px 50px #23232333;
+}
+
+.our-team__card:hover .our-team__card-info {
+  transform: translateY(-5%);
+}
+
+.our-team__card:hover .our-team__card-social {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.our-team__card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.our-team__card-avatar:hover {
+  transform: scale(1.1);
+}
+
+
+.quick-fix{
+  margin-top: -.5rem;
+}
