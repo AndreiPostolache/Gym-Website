@@ -87,12 +87,15 @@ a {
 HEADER */
 
 header {
+  color: #fff;
+  background-color: #000000;
+}
+
+.navigation__nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
 }
 
 .navigation__logo {
@@ -1252,9 +1255,9 @@ and also iPads specifically.
 /*Image*/
 .our-team__card-avatar {
   --size: 100px;
- 
+
   background-size: cover;
- 
+
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
@@ -1262,22 +1265,16 @@ and also iPads specifically.
   margin-bottom: 1rem;
 }
 
-
-.card-avatar-1{
+.card-avatar-1 {
   background-image: url(./assests/imgs/pexels-davner-ribeiro-4574154.jpg);
-
 }
 
-
-.card-avatar-2{
+.card-avatar-2 {
   background-image: url(./assests/imgs/pexels-mikhail-nilov-6740056.jpg);
-
 }
 
-
-.card-avatar-3{
+.card-avatar-3 {
   background-image: url(./assests/imgs/pexels-kampus-production-6111626.jpg);
-
 }
 
 /*Card footer*/
@@ -1341,7 +1338,6 @@ and also iPads specifically.
   transform: scale(1.1);
 }
 
-
-.quick-fix{
-  margin-top: -.5rem;
+.quick-fix {
+  margin-top: -0.5rem;
 }
