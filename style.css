@@ -127,6 +127,12 @@ header {
     brightness(103%) contrast(101%);
 }
 
+.navigation-social--icon:hover {
+  filter: invert(10%) sepia(100%) saturate(5215%) hue-rotate(1deg)
+    brightness(108%) contrast(118%);
+  
+}
+
 /* First Section */
 
 .primary__section {
@@ -383,6 +389,10 @@ header {
   align-items: center;
 }
 
+.fourth__section-content > button {
+  margin-top: 2rem;
+}
+
 .fifth__section {
   background-color: #000000;
   margin-top: -0.5rem;
@@ -545,6 +555,11 @@ header {
   width: 90%;
   text-align: center;
 }
+
+.card__cta > button {
+  margin-left: 1.5rem;
+}
+
 .card__price-box {
   text-align: center;
   margin-bottom: 8rem;
@@ -553,6 +568,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 .card__price-only {
   font-size: 1.4rem;
   text-transform: uppercase;
