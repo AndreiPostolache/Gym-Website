@@ -1441,7 +1441,7 @@ and also iPads specifically.
     gap: 2rem;
   }
 
-  .secondary__section--heading{
+  .secondary__section--heading {
     font-size: 100%;
   }
 
@@ -1471,7 +1471,7 @@ and also iPads specifically.
   .card__plan {
     flex-direction: column;
     gap: 1rem;
-    margin-left: 1rem;
+    align-items: center;
   }
 
   .card__cta > button {
@@ -1530,7 +1530,7 @@ and also iPads specifically.
     width: 100%;
   }
 
-  .footer-links{
+  .footer-links {
     width: 20rem;
   }
 }
