@@ -10,23 +10,41 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="navigation.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Navigation -->
     <header>
-     
       <nav class="navigation__nav">
         <div class="navigation__logo">
           <p>Ginyard Gym</p>
         </div>
-
-        <ul class="navigation__list">
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul
+          class="navigation__list primary-navigation"
+          data-visible="false"
+          id="primary-navigation"
+        >
           <li class="navigation__item"><a href="./index.html">Home</a></li>
-          <li class="navigation__item"><a href="./about-us.html">About us</a></li>
-          <li class="navigation__item"><a href="./services.html">Services</a></li>
-          <li class="navigation__item"><a href="./our-team.html">Our Team</a></li>
-          <li class="navigation__item"><a href="./contact-page.html">Contact</a></li>
+          <li class="navigation__item">
+            <a href="./about-us.html">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./services.html">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./our-team.html">Our Team</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./contact-page.html">Contact</a>
+          </li>
           <li class="navigation__item"><a href="./gallery.html">Gallery</a></li>
         </ul>
 
@@ -65,8 +83,6 @@
           </li>
         </ul>
       </nav>
-
-    
     </header>
 
     <!-- Main Content -->
@@ -216,7 +232,7 @@
           </div>
         </div>
 
-        <button class="second-button btn-white "><span>See more</span></button>
+        <button class="second-button btn-white"><span>See more</span></button>
       </section>
 
       <section class="fourth__section">
@@ -410,8 +426,12 @@
             >
           </li>
           <li><a href="#">The best exercise to lose belly fat</a></li>
-          <li><a href="#">27 Best Dumbbell Exercises for Building Muscle</a></li>
-          <li><a href="#">10 Best Chest Workout Exercises for Building Muscle</a></li>
+          <li>
+            <a href="#">27 Best Dumbbell Exercises for Building Muscle</a>
+          </li>
+          <li>
+            <a href="#">10 Best Chest Workout Exercises for Building Muscle</a>
+          </li>
         </ul>
       </div>
     </footer>
