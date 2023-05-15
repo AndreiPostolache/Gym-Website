@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our team</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="navigation.js"></script>
   </head>
   <body>
     <header>
-    
       <nav class="navigation__nav">
         <div class="navigation__logo">
-            <p>Ginyard Gym</p>
-          </div>
-
-        <ul class="navigation__list">
+          <p>Ginyard Gym</p>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul
+          class="navigation__list primary-navigation"
+          data-visible="false"
+          id="primary-navigation"
+        >
           <li class="navigation__item"><a href="./index.html">Home</a></li>
           <li class="navigation__item">
             <a href="./about-us.html">About us</a>
           </li>
-          <li class="navigation__item"><a href="./services.html">Services</a></li>
-          <li class="navigation__item"><a href="./our-team.html">Our Team</a></li>
+          <li class="navigation__item">
+            <a href="./services.html">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./our-team.html">Our Team</a>
+          </li>
           <li class="navigation__item">
             <a href="./contact-page.html">Contact</a>
           </li>
@@ -29,44 +43,42 @@
         </ul>
 
         <ul class="navigation-social">
-            <li>
-              <a href="#"
-                ><img
-                  src="./assests/imgs/facebook.svg"
-                  alt="Facebook"
-                  class="navigation-social--icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assests/imgs/instagram.svg"
-                  alt="Instagram"
-                  class="navigation-social--icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assests/imgs/twitter.svg"
-                  alt="Twitter"
-                  class="navigation-social--icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./assests/imgs/youtube.svg"
-                  alt="Youtube"
-                  class="navigation-social--icon"
-              /></a>
-            </li>
-          </ul>
+          <li>
+            <a href="#"
+              ><img
+                src="./assests/imgs/facebook.svg"
+                alt="Facebook"
+                class="navigation-social--icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assests/imgs/instagram.svg"
+                alt="Instagram"
+                class="navigation-social--icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assests/imgs/twitter.svg"
+                alt="Twitter"
+                class="navigation-social--icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assests/imgs/youtube.svg"
+                alt="Youtube"
+                class="navigation-social--icon"
+            /></a>
+          </li>
+        </ul>
       </nav>
-
-     
     </header>
-
+    
     <main>
       <section class="our-team__first-section">
         <h1 class="about-me__first-section--header">Our team</h1>
