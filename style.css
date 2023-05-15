@@ -169,7 +169,7 @@ header {
   );
   clip-path: polygon(0 0, 85% 0, 40% 100%, 0% 100%);
   background-size: contain;
-  width: 45%;
+  max-width: 100%;
   height: 60%;
 }
 
@@ -1532,5 +1532,109 @@ and also iPads specifically.
 
   .footer-links {
     width: 20rem;
+  }
+}
+
+@media (min-width: 35rem) and (max-width: 64rem) {
+  .navigation__list {
+    --underline-gap: 0.5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+    background: rgba(21, 21, 21, 0.5);
+
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 3rem;
+    top: 1rem;
+    background: transparent;
+    background-image: url(./assests/imgs/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(./assests/imgs/icon-close.svg);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
+  }
+
+  .navigation__list[data-visible="true"] {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid white;
+    outline-offset: 5px;
+  }
+
+  .navigation-social {
+    display: none;
+  }
+
+  .navigation__nav {
+    height: 3.5rem;
+  }
+
+  .primary__section div {
+    width: 100%;
+  }
+
+  .primary__section--heading {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .class-item--wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card__plan {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .contact-me__icons {
+    width: 3rem;
+  }
+
+  .sixth__section--contact-me{
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
   }
 }
