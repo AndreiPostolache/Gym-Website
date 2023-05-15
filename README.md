@@ -4,6 +4,19 @@
 
 This is a multipage gym website designed to provide information about the gym, its services, facilities, and team members. The website is built using modern web development technologies, including HTML5, CSS3, and JavaScript. It is fully responsive, optimized for both mobile and tablet devices.
 
+# Screenshots
+
+[![Screenshot-2023-05-15-at-20-04-39-Gym-Website.png](https://i.postimg.cc/4dYSyPtJ/Screenshot-2023-05-15-at-20-04-39-Gym-Website.png)](https://postimg.cc/47T5FzBM)
+
+[![Screenshot-2023-05-15-at-20-05-24-Gym-Website.png](https://i.postimg.cc/zv1FNFF2/Screenshot-2023-05-15-at-20-05-24-Gym-Website.png)](https://postimg.cc/mz8HNMq7)
+
+
+
+# Links
+
+- Solution URL: [GitHub](https://github.com/AndreiPostolache/Gym-Website)
+- Live Site URL: [Netlify](https://celadon-starship-8daedc.netlify.app/)
+
 # Pages
 
 The website consists of the following pages:
